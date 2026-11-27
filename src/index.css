@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+/* Warm ochre background with subtle ceramic speckle texture */
+.app-bg {
+  background-color: #9e8242;
+  background-image:
+    radial-gradient(rgba(255, 244, 214, 0.08) 1px, transparent 1.4px),
+    radial-gradient(rgba(62, 46, 16, 0.1) 1px, transparent 1.4px),
+    linear-gradient(160deg, #a68a46 0%, #9e8242 55%, #84693a 100%);
+  background-size: 22px 22px, 34px 34px, 100% 100%;
+  background-position: 0 0, 11px 17px, 0 0;
+}
+
+.card-terra {
+  background: linear-gradient(150deg, #8a4520 0%, #7d3a17 45%, #6e3314 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
